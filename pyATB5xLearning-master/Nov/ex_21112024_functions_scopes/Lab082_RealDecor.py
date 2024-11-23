@@ -4,13 +4,13 @@ import time
 def time_decorator(func):
     def wrapper():
         start_time = time.time()
-        print(start_time)
+        print("start time",start_time)
         func()
         end_time = time.time()
-        print(end_time)
+        print("end time", end_time)
         print("Total Time Take by Func -> ", end_time - start_time)
 
-    return wrapper()
+    return wrapper
 
 
 def print_logs(func):
@@ -19,7 +19,7 @@ def print_logs(func):
         func()
         print("Ending log")
 
-    return wrapper()
+    return wrapper
 
 
 @time_decorator
@@ -33,3 +33,6 @@ def test_ui_1():
 def test_ui_2():
     print("Add a function, time taken by this function 2")
     time.sleep(5)
+
+test_ui_1()
+test_ui_2()

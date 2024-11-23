@@ -1,13 +1,15 @@
 def decorator1(func):
     def wrapper():
-        print("Decorator 1")
+        print("start 1")
         func()
+        print("end 1")
     return wrapper
 
 def decorator2(func):
     def wrapper():
-        print("Decorator 2")
+        print("start 2")
         func()
+        print("end 2")
     return wrapper
 
 
