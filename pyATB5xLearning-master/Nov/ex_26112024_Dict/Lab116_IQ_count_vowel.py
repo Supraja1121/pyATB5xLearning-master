@@ -11,5 +11,4 @@ result = dict()
 for char in input_string:
     if char in vowels:
         vowels_count = vowels_count + 1
-
 print(vowels_count)
