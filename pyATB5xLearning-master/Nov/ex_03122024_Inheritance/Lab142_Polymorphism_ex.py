@@ -8,4 +8,4 @@ class MathUnits:
         print(a+b+c)
 
 d=MathUnits()
-d.add()
+d.add(1,2,4)
