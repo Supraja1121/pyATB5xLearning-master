@@ -46,6 +46,7 @@ def get_booking_id():
     response_data = requests.post(url=full_url, headers=headers, json=json_payload)
     response_data_json = response_data.json()
     booking_id = response_data_json["bookingid"]
+    print(booking_id)
     return booking_id
 
 
@@ -92,3 +93,6 @@ def test_delete():
     }
     response = requests.delete(url=DELETE_URL, headers=headers)
     assert response.status_code == 201
+
+
+
